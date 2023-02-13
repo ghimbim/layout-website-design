@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>Website</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo-text">Logo</h1>
+        <ul class="nav-items">
+           <li><a class="nav-item" href="#"> Home</a></li>
+            <li><a class="nav-item" href="#services">Our Services</a></li>   
+            <li><a class="nav-item" href="#about">About Us</a></li>
+            <li><a class="nav-item" href="#gallery">Gallery</a></li>
+            <li><a class="nav-item" href="#blogs">Blogs</a></li>
+        </ul>
+    </nav>
+
+<!-- Mobile responsive -->
+<nav class="mobile-nav">
+    <a class="hamburger">
+        <svg class="ham hamRotate" viewBox="0 0 100 100" width="80"
+            onclick="this.classList.toggle('active')">
+            <path class="line top"
+                d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+            <path class="line middle" d="m 30,50 h 40" />
+            <path class="line bottom"
+                d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+        </svg>
+    </a>
+    <!-- <a class="pop-up-button">Click</a> -->
+    <div class="overlay">
+        <ul>
+            <li onclick="removeNav()"><a hrf="#">Home</a></li>
+            <li onclick="removeNav()"><a href="#services">Our services</a></li>
+            <li onclick="removeNav()"><a href="#about">About us</a></li>
+            <li onclick="removeNav()"><a href="#gallery">Gallery</a></li>
+            <li onclick="removeNav()"><a href="#blogs">Blogs</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Navbar Ends -->
+
+    <!-- Slider Starts -->
+
+    <div class="swiper">
+
+
+        <div class="swiper-wrapper">
+
+            <!-- Slide Item 1 -->
+            <div style=" 
+                    background-image: url('./assets/image5.jpg');
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;" class="swiper-slide">
+
+            </div>
+
+            <!-- Slide Item 2 -->
+            <div style=" 
+                    background-image: url('./assets/image5.jpg');
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;" class="swiper-slide">
+
+            </div>
+
+            <!-- Slide Item 3 -->
+            <div style=" 
+                    background-image: url('./assets/image5.jpg');
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;" class="swiper-slide">
+
+            </div>
+
+        </div>
+
+
+        <!-- Slide Controller -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+
+
+        <!-- Slide Pagination-->
+        <div class="swiper-pagination"></div>
+
+    </div>
+   
+    <!-- Slider Ends -->
+
+
+    <!-- Services -->
+    <section class="container" id="services">
+        <h1> Our Services</h1>
+
+        <div class="service-items">
+            <div class="service-item">
+                <img src="./assets/image12.jpg">
+                <p>Lorem Epsum</p>
+            </div>
+            <div class="service-item">
+                <img src="./assets/image11.jpg">
+                <p>Lorem Epsum</p>
+            </div>
+            <div class="service-item">
+                <img src="./assets/image4.png">
+                <p>Lorem Epsum</p>
+            </div>
+            <div class="service-item">
+                <img src="./assets/image9.jpg">
+                <p>Lorem Epsum</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Ends -->
+
+
+    <!-- About Us start -->
+    <section class="container" id="about">
+        <h1>About Us</h1>
+
+        <div class="about-content">
+            <img src="./assets/image1.png">
+            <p class="about-description"><strong>Lorem ipsum</strong> dolor sit, amet consectetur adipisicing elit.
+                Animi, eveniet
+                obcaecati eos nisi ullam velit ipsum sit incidunt consequatur nesciunt nobis omnis optio molestiae
+                officiis fugiat sed et temporibus, dolorum tempora facilis accusamus atque praesentium enim iure! Natus
+                dolorem reiciendis tempore nisi ipsam veritatis animi quia magnam, velit similique. Voluptas magni
+                delectus in. Ratione quidem possimus odit magni cum quisquam placeat sint voluptatibus, repellat,
+                dolorum unde iusto impedit nihil eligendi!</p>
+        </div>
+    </section>
+
+    <!-- About us ends -->
+
+    <!-- Gallery Starts -->
+    <section class="gallery" id="gallery">
+        <h1>Gallery</h1>
+
+        <div class="gallery-items">
+            <img src="./assets/image10.jpeg" class="gallery-item">
+            <img src="./assets/image3.PNG" class="gallery-item">
+            <img src="./assets/image7.jpg" class="gallery-item">
+            <img src="./assets/image6.jpeg" class="gallery-item">
+            <img src="./assets/image2.PNG" class="gallery-item">
+            <img src="./assets/image8.jpg" class="gallery-item">
+        </div>
+    </section>
+
+    <!-- Gallery Ends -->
+
+    <!-- Blogs starts -->
+    <section class="container" id="blogs">
+        <h1>Blogs</h1>
+        <div class="blog-items">
+            <div class="blog">
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam excepturi doloremque quae alias ipsum
+                    vitae debitis distinctio, veritatis aliquid exercitationem expedita magni ab, corrupti nam eius
+                    reprehenderit et, fuga maxime? Reprehenderit voluptatem autem soluta dolor veniam tempora est quis
+                    officiis? A libero dolorem corporis. Veniam accusamus sequi dolorem neque fuga.</p>
+            </div>
+
+            <div class="blog">
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam excepturi doloremque quae alias ipsum
+                    vitae debitis distinctio, veritatis aliquid exercitationem expedita magni ab, corrupti nam eius
+                    reprehenderit et, fuga maxime? Reprehenderit voluptatem autem soluta dolor veniam tempora est quis
+                    officiis? A libero dolorem corporis. Veniam accusamus sequi dolorem neque fuga.</p>
+            </div>
+
+            <div class="blog">
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam excepturi doloremque quae alias ipsum
+                    vitae debitis distinctio, veritatis aliquid exercitationem expedita magni ab, corrupti nam eius
+                    reprehenderit et, fuga maxime? Reprehenderit voluptatem autem soluta dolor veniam tempora est quis
+                    officiis? A libero dolorem corporis. Veniam accusamus sequi dolorem neque fuga.</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- Blog ends -->
+
+
+    <!-- Contact us start -->
+
+    <section class="container" id="blogs">
+        <h1>Contact us</h1>
+
+        <form>
+            <div class="contact-form">
+
+                <div class="contact-left">
+                    <div class="input-detail">
+                        <label for="text">Name:<span>*</span></label><br>
+                        <input id="text" type="text" placeholder="Enter your fullname">
+                    </div>
+                    <div class="input-detail">
+                        <label for="email">E-mail:<span>*</span></label><br>
+                        <input id="email" type="text" placeholder="Enter your e-mail">
+                    </div>
+                    <div class="input-detail">
+                        <label for="subject">Subject:<span>*</span></label><br>
+                        <input id="subject" type="text" placeholder="Enter subject">
+                    </div>
+                </div>
+
+                <div class="contact-right">
+
+                        <div class="message-detail">
+                            <label for="subject">Message:<span>*</span></label><br>
+                            <textarea id="subject" type="text" placeholder="Enter your message"></textarea>
+                        </div>
+
+                    <button class="contact-submit">Submit</button>
+                </div>
+
+
+                
+            </div>
+            
+        </form>
+
+    </section>
+    <!-- Contact us ends -->
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h1 class="logo-text">Logo</h1>
+        <div class="tab">
+            <h3>Get Updates</h3>
+            <div class="newsletter">
+                <input type="text" placeholder="Your email">
+                <button class="subscribe">Subscribe</button>
+            </div>
+        </div>
+        <div class="tab">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <div class="link">
+                    <img src="./assets/fa.png" alt="">
+                </div>
+                
+                <div class="link">
+                    <img src="./assets/twitter.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="tab">
+            <h3>Call Us</h3>
+            <div class="social-links">
+                <div class="link">
+                    <img src="./assets/call.png" alt="">
+                </div>
+                <i>+977 98000000000</i>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ends -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".swiper", {
+            
+            direction: "horizontal",
+            loop: false,
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+
+        });
+
+        document.querySelector('.hamburger').addEventListener('click',(e)=>{
+            document.querySelector('.mobile-nav').classList.toggle('show')
+        })
+
+        function removeNav(){
+            document.querySelector('.mobile-nav').classList.toggle('show')
+            document.querySelector('.ham').classList.toggle('active')
+        }
+
+        // document.getElementById('removeNav').addEventListener('click',(e)=>{
+        //     document.querySelector('.mobile-nav').classList.toggle('show')
+        // })
+    </script>
+
+</body>
+
+</html>
